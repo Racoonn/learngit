@@ -1,0 +1,102 @@
+footer div.servers-box{
+  width:1200px;
+  margin:0 auto;
+  height:163px;
+  padding:35px 0;
+  box-sizing:border-box;
+}
+div.servers-box i.servers-01{
+  width:53px;
+  height:53px;
+  background:url(../img/header/icon-server-01.png)no-repeat;
+}
+div.servers-box i.servers-02{
+  width:53px;
+  height:53px;
+  background:url(../img/header/icon-server-02.png)no-repeat;
+}
+div.servers-box i.servers-03{
+  width:53px;
+  height:53px;
+  background:url(../img/header/icon-server-03.png)no-repeat;
+}
+div.servers-box i.servers-04{
+  width:53px;
+  height:53px;
+  background:url(../img/header/icon-server-04.png)no-repeat;
+}
+div.servers-box i.servers-05{
+  width:53px;
+  height:53px;
+  background:url(../img/header/icon-server-05.png)no-repeat;
+}
+div.servers-box>span{
+  display:inline;
+  float:left;
+  text-align:center;
+  line-height:30px;
+  font-size:16px;
+  width:20%;
+}
+div.servers-box>span>i{
+  display:block;
+  margin:0 auto 10px auto;
+  
+}
+div.help-box{
+  width:1200px;
+  margin:0 auto;
+  height:175px;
+  padding:35px 0;
+  box-sizing:border-box;
+  position:relative;
+}
+div.help-box .help-dl{
+  float:left;
+  width:200px;
+}
+div.help-box .help-dl dt{
+  font-size:14px;
+  line-height:33px;
+  font-weight:bold;
+  font-family:"宋体";
+}
+div.help-box .help-dl dd{
+  line-height:24px;
+}
+div.bottom{
+  width:1200px;
+  margin:0 auto;
+  height:135px;
+  padding:35px 0;
+  box-sizing:border-box;
+}
+div.help-contact .p-tel{
+  font-size:22px;
+  line-height:33px;
+}
+div.help-contact .p-time{
+  color: #565656;
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+div.bottom div.foote-content{
+  font-size:12px;
+  color:#f7f7f7;
+  padding:30px 0;
+}
+div.bottom div.footer-content p{
+  text-align:center;
+  line-height:30px;
+}
+div.bottom div.copyright{
+}
+div.bottom div.copyright #icon_foot{
+  width:50px;
+  height:14px;
+  margin:0 auto;
+  display:block;
+  text-align:center;
+  background:url(../img/header/pic.gif)no-repeat;  
+}

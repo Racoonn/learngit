@@ -1,0 +1,184 @@
+/*logo*/
+.header-box{
+  height:103px;
+}
+.container{
+  width:1230px;
+  margin:0 auto;
+}
+.container>a.logoimg{
+  display: inline-block;
+  width: 170px;
+  height: 103px;
+  background: url(../img/login/logo1.png) no-repeat center;
+}
+
+
+/*登录控件部分*/
+section{
+  height:483px;
+  background:#EEEEEE;
+}
+section>div.banner{
+  background: url(../img/login/YHDL.jpg)no-repeat;
+  height:100%;
+}
+.login-box{
+  position: absolute;
+  right: 0;
+  width: 320px;
+  height: 436px;
+  margin: -450px 200px 0 195px;
+  background: #fff;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.login-box .login-title{
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  line-height: 36px;
+}
+.login-box .login-title .name{
+  font-size:18px;
+  color:#010101;
+}
+.login-box .login-title .link-a{
+  position:absolute;
+  right:0;
+  top:15px;
+  color:red;
+  font-size:14px;
+}
+
+/*错误提示*/
+.login-errr-info{
+  background: #ffdddd;
+  color: #ff3736;
+  padding: 2px 10px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.login-box .login-error-info{
+  background: #ffdddd;
+  color: #ff3736;
+  padding: 2px 10px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.login-box .login-error-info .icon-error{
+  width:15px;
+  vertical-align:middle;
+  background:url(../img/login/icon-info-error.png)no-repeat;
+  height:15px;
+  display:inline-block;
+  margin-right:5px;
+  margin-top:-2px;
+}
+.login-form .form-list{
+  position: relative;
+  height:41px;
+  margin-bottom:20px;
+  border:1px solid #bfbfbf;
+  overFlow:hidden;
+}
+.form-list .input-text{
+  position: relative;
+  z-index: 1;
+  height: 21px;
+  padding: 10px 15px 10px 45px;
+  border: 0;
+  width: 260px;
+  outline:none;
+}
+.form-list>i.icon-login-user{
+  background:url(../img/login/icon-login-user.gif)no-repeat;
+  position: absolute;
+  margin-top: -30px;
+  left: 15px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  z-index: 2;
+} 
+.form-list>i.icon-login-password{
+  background:url(../img/login/icon-login-password.gif)no-repeat;
+  position: absolute;
+  margin-top: -32px;
+  left: 15px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  z-index: 2;
+}
+.form-list>.input-yzm{
+  width:100%;
+  height:100%;
+  border:0;
+  padding-left:15px;
+  outline:none;
+}
+#imgcode{
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  border:0;
+  width:95px;
+  height:35px;
+}
+
+
+/*自动登录*/
+p.login-tool{
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.login-tool .label-check input{
+  display:inline-block;
+  vertical-align:middle;
+  margin-top:-1px;
+  margin-right:5px;
+  color:#333;
+}
+.login-tool>a{
+  float:right;
+  color:#333;
+}
+a.user-login-btn{
+  display:block;
+  text-align:center;
+  height:47px;
+  line-height:47px;
+  background:#ff3736;
+  color:#fff;
+  font-size:18px;
+  border:0;
+}
+
+div.other-login{
+  margin-top: 10px;
+  color: #7c7c7c;
+  line-height: 22px;
+}
+
+.footer-box{
+  font-size:12px;
+  backgroung:#fff;
+  padding:30px 0;
+}
+.footer-box p{
+  line-height:30px;
+  text-align:center;
+}
+footer-box .container{
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+

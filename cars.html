@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Title</title>
+  <link rel = "stylesheet" href = "css/base.css">
+  <link rel = "stylesheet" href = "css/footer.css">
+  <link rel = "stylesheet" href = "css/cars.css">
+</head>
+<body>
+  
+    <div class="cart-container">
+      <div class="cart-header">
+        <a href = "index.html"></a><!--背景图-->
+        <div class="step-box"></div><!--背景图-->
+      </div>
+      
+      <!--未登录或空-->
+      <div class="page-cart-no" id="NoShoppingProduct" style="display: none">
+        <div class="page-cart-container">
+          <div class="page-cart-no-info">
+            <p class="p1">您的购物车还是空的</p>
+            <p class="p2">
+              <a class="no-btn" href = "index.html">去逛逛</a>
+              <br>
+              <a class="no-btn" id="CartLogin" href = "">登录</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!--有产品-->
+      <div id="YesShoppingProduct">
+        <div class="cart-name-title">
+          <span class="page-title">购物车</span>
+          <span class="free" style="margin-left: 5%;">
+            您如需顺丰包邮,点此链接
+            <a href = "">积分兑换</a>
+          </span>
+          <span id="cartShowLogin" style="display: none">
+            现在
+            <a href = "#">登录</a>,您购物车的商品将被永久保留
+          </span>
+        </div>
+        <div class="pay-container cart-table-box">
+          <table id="ShoppingCartList" class="cart-table">
+            <thead>
+              <tr>
+                <th class="first" colspan="2">
+                  <span class="line">
+                    <label class="mn-check check-all check">全选</label>
+                    <span class="tooltip-span"  style="display: none">还差元包邮
+                      <a class="together" href = "">凑单</a>
+                    </span>
+                  </span>
+                </th>
+                <th width="140">
+                  <span class="line">单价</span>
+                </th>
+                <th width="140">
+                  <span class="line">数量</span>
+                </th>
+                <th width="140">
+                  <span class="line">合计</span>
+                </th>
+                <th width="140">
+                  <span class="line">操作</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="tbody1">
+<!--
+              <tr class="even" id="ev-4909">
+                <td>
+                  <label class="mn-check checks check"></label>&lt;!&ndash;背景图标&ndash;&gt;
+                </td>
+                <td>
+                  <div class="cart-table-product">
+                    <div class="cart-table-img">
+                      <a href = "#">
+                        <img src = "" alt = "">
+                      </a>
+                    </div>
+                    <div class="cart-table-name">
+                      <a href = "">【新品发售！】罗技 Craft无线键盘 深灰</a>
+                    </div>
+                  </div>
+                </td>
+                <td class="price">¥1699.00</td>
+                <td>
+                  <div class="cart-table-number">
+                    <a class="cut-product" href = "#">-</a>
+                    <input type = "text" name="buyNum" value="1">
+                    <a class="add-product" href = "#">+</a>
+                  </div>
+                </td>
+                <td class="a-price">¥1699.00</td>
+                <td>
+                  <a class="delete" href = "">
+                    <i class="icon-delete"></i>
+                    删除
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+-->
+          </table>
+        </div>
+        <div class="cart-all-price-box">
+          <em class="left-bg"></em><!--背景图-->
+          <div class="div-text">
+            <p>
+              <span style="display: none;">运费
+                <i>￥</i>
+                <i style="padding-left: 0px;">0</i>
+              </span>
+              <span>商品金额
+                <i>￥</i>
+                <i id="sumProductPrice" style="padding-left: 0px;">1699</i>
+              </span>
+            </p>
+          </div>
+          <div class="price-content">
+            <span class="check-label-all">
+              <label class="mn-check check-all check">全选</label><!--背景图-->
+            </span>
+            <span class="check-all-tool">
+              <a class="delete-all" href = "">批量删除</a>
+              <a class="delete-clear" href = "">清空购物车</a>
+            </span>
+            <div class="check-all-right">
+              <span class="check-all-info">
+                <em class="cFreight">还差元包邮 <a class="together-a" href = "">凑单</a></em>
+              </span>
+              <span class="check-all-price">
+                <em>商品总价</em>
+                <strong style="float: left">¥</strong>
+                <strong style="float: right" id="SOPrice">1699</strong>
+              </span>
+              <span class="check-all-price">
+                <em>所需积分</em>
+                <strong style="float: right" id="SOPrice">0</strong>
+              </span>
+              <a href = "" id="sureOrder" class="wg-btn orange-btn sure-result">确认结算</a>
+            </div>
+          </div>
+          <div style="width: 100%; text-align: right; margin-top: 8%;">
+            <span class="Free">您如需顺丰包邮，点此链接
+              <a href="/pro/proDetail/4345">积分兑换</a>
+            </span>
+          </div>
+          <em class="right-bg"></em><!--背景图-->
+          <a class="give-advice" href = ""></a><!--背景图-->
+        </div>
+      </div>
+      
+      <!--凑单-->
+      <div id="togetherOrder" class="wg-alert-box" style="display: none;">
+        <div class="wg-alert-title">
+          您可以凑单的商品
+          <a href = "" class="close">X</a>
+        </div>
+        <div class="wg-alert-body">
+          <div class="cart-product-content choudan-product">
+            <span class="left-btn" id="TogethersaleLeft" style="display: block;"></span>
+            <div class="slide-content">
+              <ul class="cart-com-list" id="Togethersale" style="left: 0px; width: 0px;">
+              </ul>
+            </div>
+            <span class="right-btn" id="TogethersaleRight" style="display: block;"></span>
+          </div>
+        </div>
+      </div>
+      
+      <!--未登录提示-->
+      <div id="noLogin" class="wg-alert-box" style="width: 305px; height: 134px; display: none;">
+        <div class="wg-alert-body">
+          <div class="alert-submint-info">
+            <p class="p1">您还未登录,无法提交。请立即登录。</p>
+            <p>
+              <a href = "" class="small-btn wd-dialog-sure">登录</a>
+              <a href = "" class="qx-btn small-btn wd-dialog-cancel">取消</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!--删除商品-->
+      <div id="deleteCart" class="wg-alert-box" style="width: 240px; height: 134px; display: none;">
+        <div class="wg-alert-body">
+          <div class="alert-submint-info">
+            <p class="p1">确认从购物车删除吗?</p>
+            <p>
+              <a href = "" class="small-btn wd-dialog-sure">确认</a>
+              <a href = "" class="qx-btn small-btn wd-dialog-cancel">取消</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="PointTiShi" class="wg-alert-box" style="width: 240px; height: 134px; display: none;">
+        <div class="wg-alert-body">
+          <div class="alert-submint-info">
+            <p class="p1">积分不足不能添加商品</p>
+            <p>
+              <a href = "" class="small-btn wd-dialog-sure">确认</a>
+              <a href = "" class="qx-btn small-btn wd-dialog-cancel">取消</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="summitPoint" class="wg-alert-box" style="width: 240px; height: 134px; display: none;">
+        <div class="wg-alert-body">
+          <div class="alert-submint-info">
+            <p class="p1">积分不足不能兑换商品</p>
+            <p>
+              <a href = "" class="small-btn wd-dialog-sure">确认</a>
+              <a href = "" class="qx-btn small-btn wd-dialog-cancel">取消</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+
+
+
+  <footer id="footer"></footer>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/cars.js"></script>
+  <script src="js/footer2.js"></script>
+</body>
+</html>

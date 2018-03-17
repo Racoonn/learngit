@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<form id="login">
+	<header class="header-box">
+		<div class="container">
+			<a href="index.html" class="logoimg"></a>
+		</div>
+	</header>
+	
+	
+	<section>
+		<!-- 广告位 -->
+		<div class="banner"><a href=""></a></div>
+		
+		<!-- 登录主体 -->
+		<div class="login-box">
+			<h4 class="login-title">
+				<span class="name">账户登录</span>
+				<a class="link-a" href="#">手机快速注册&gt;</a>
+			</h4>
+			
+			<!-- 错误提示 -->
+			<div id="info" class="login-error-info" style="display:none;">
+				<i class="icon-error"></i><span id="err"></span>
+			</div>
+			
+			<!-- 登录控件 -->
+			<div id="LoginForm" class="login-form">
+				<div class="form-list">
+					<input id="inPhone" type="text" placeholder="手机号/邮箱/账户名" class="input-text">
+					<i class="icon-login-user"></i>
+				</div>
+				<div class="form-list">
+					<input id="inPwd" type="password" placeholder="密码" class="input-text">
+					<i class="icon-login-password"></i>
+				</div>
+				<div class="form-list">
+					<input id="input-yzm" type="text" class="input-yzm" placeholder="请输入验证码">
+					<img id="imgcode" src="data/01_code.php">
+				</div>
+			</div>
+
+			<div>
+				<p class="login-tool">
+					<label class="label-check"><input type="checkbox">自动登录</label>
+					<a href="#">忘记密码</a>
+				</p>
+				<a id="btnLogin" class="user-login-btn" href="#">登录</a>
+			</div>
+			<div class="other-login">
+				<p>你也可以使用以下账号登录:</p>
+				<p>
+					<a href="#">QQ</a>&nbsp;|&nbsp;
+					<a href="#">微信</a>
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<footer class="footer-box">
+			<div class="container">
+					<p>罗技官方商城由罗技（中国）科技有限公司授权双齐国际贸易（上海）有限公司负责经营 2017&gt; , all rights reserved</p>
+					<p>
+							<a href="#" target="_blank">罗技官方网站</a>
+							<a href="#" target="_blank">联系方式</a>
+							<a href="#" target="_blank">隐私声明</a>
+							<a href="#" target="_blank">用户服务协议</a>
+							<a href="#" target="_blank">沪ICP备10200262号</a>
+					</p>
+			</div>
+	</footer>
+</form>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>

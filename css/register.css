@@ -1,0 +1,135 @@
+/*页尾连接*/
+.footer-box{
+  border-top:1px solid #e7e7e7;
+  font-size:12px;
+  backgroung:#fff;
+  padding:30px 0 ;
+  margin-top:30px;
+}
+.footer-box p{
+  line-height:30px;
+  text-align:center;
+}
+footer-box .container{
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+/*页头logo*/
+.header-box{
+  width:1200px;
+  margin:0 auto;
+}
+.header-box div.container a{
+  width:170px;
+  height:103px;
+  display:inline-block;
+  background:url(../img/register/logo1.png)no-repeat center;
+  vertical-align:middle;
+}
+
+/*表单控件*/
+.container{
+  max-width:1200px;
+  padding:0 15px;
+  margin:0 auto;
+}
+div.register-box{
+  width:400px;
+  margin:0 auto;
+}
+h4 a{
+  color:tomato;;
+}
+h4{
+  position:relative;
+  height:40px;
+  line-height:40px;
+}
+h4 span.name{
+  font-size:18px;
+}
+h4 div.right-text{
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+.info-box{
+  border:1px solid #ffcc66;
+  background:#fffff0;
+  line-height:20px;
+  padding:8px 10px;
+  color:#ffaa00;
+  margin-bottom:12px;
+}
+.info-box .icon-gif{
+  width:15px;
+  height:15px;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:10px;
+  background:url(../img/register/icon-login-gif.png)no-repeat;
+}
+.form-group .list{
+  position:relative;
+  margin-bottom:38px;
+}
+.form-group .list .form-list{
+  position:relative;
+  height:54px;
+  border:1px solid #d8d8d8;
+}
+.form-group .list .form-list label{
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:54px;
+  font-size:14px;
+  padding-left:10px;
+}
+
+.form-list input{
+  height: 52px;
+  width:282px;
+  border: 0;
+  display: block;
+  padding-left: 115px;
+  font-size: 14px;
+}
+.form-list> img{
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95px;
+  height: 55px;
+}
+.form-list>#getZYM{
+  display:block;
+  position:absolute;
+  right:1px;
+  top:1px;
+  height:52px;
+  line-height:52px;
+  background:#e9e9e9;
+  color:#5e5e5e;
+  padding:0 15px;
+}
+a.user-btn{
+  display:block;
+  text-align:center;
+  border:0;
+  height:47px;
+  line-height:47px;
+  background:#ff3736;
+  color:#fff;
+  font-size:18px;
+  margin-top:20px;
+}
+.check-p .label-text>#ck{
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:8px;
+}
